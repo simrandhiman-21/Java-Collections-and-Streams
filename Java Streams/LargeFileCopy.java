@@ -16,7 +16,7 @@ public class LargeFileCopy {
         System.out.printf("Buffered Streams:   %.2f ms%n", bufferedTime / 1_000_000.0);
         System.out.printf("Unbuffered Streams: %.2f ms%n", unbufferedTime / 1_000_000.0);
 
-        System.out.println(bufferedTime < unbufferedTime ? "\n✅ Buffered streams are faster." : "\n🚀 Unbuffered streams are faster.");
+        System.out.println(bufferedTime < unbufferedTime ? "Buffered streams are faster." : " Unbuffered streams are faster.");
     }
 
     // Method to copy file with option for buffered or unbuffered stream

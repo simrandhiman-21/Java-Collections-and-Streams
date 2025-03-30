@@ -23,7 +23,7 @@ public class SaveUserInfo {
             writer.write("Age: " + age + "\n");
             writer.write("Favorite Language: " + language + "\n");
 
-            System.out.println("\n✅ User information saved to " + fileName);
+            System.out.println("User information saved to " + fileName);
 
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());

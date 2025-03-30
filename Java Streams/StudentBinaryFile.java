@@ -50,7 +50,7 @@ public class StudentBinaryFile {
                 dos.writeDouble(gpa);
             }
 
-            System.out.println("\n✅ Student details saved successfully.");
+            System.out.println("Student details saved successfully.");
 
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());

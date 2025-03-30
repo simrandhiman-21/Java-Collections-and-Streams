@@ -17,7 +17,7 @@ public class UpperToLowerConverter {
                 writer.newLine();                  // Add new line
             }
 
-            System.out.println("\n✅ File converted successfully: " + destFile);
+            System.out.println("File converted successfully: " + destFile);
 
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());

@@ -16,9 +16,9 @@ public class ImageToByteArray {
 
             // Verify if the original and copied files are identical
             if (areFilesIdentical(sourceFile, destFile)) {
-                System.out.println("\n✅ The copied image is identical to the original.");
+                System.out.println("The copied image is identical to the original.");
             } else {
-                System.out.println("\n❌ The copied image is NOT identical to the original.");
+                System.out.println("The copied image is NOT identical to the original.");
             }
 
         } catch (IOException e) {
@@ -38,7 +38,7 @@ public class ImageToByteArray {
                 baos.write(buffer, 0, bytesRead);
             }
             
-            System.out.println("✅ Image converted to byte array.");
+            System.out.println("Image converted to byte array.");
             return baos.toByteArray();
         }
     }
@@ -55,7 +55,7 @@ public class ImageToByteArray {
                 fos.write(buffer, 0, bytesRead);
             }
 
-            System.out.println("✅ Byte array written back to image: " + filePath);
+            System.out.println("Byte array written back to image: " + filePath);
         }
     }
 

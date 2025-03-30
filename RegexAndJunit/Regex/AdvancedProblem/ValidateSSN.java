@@ -20,16 +20,16 @@ public class ValidateSSN {
         boolean validSSN = false;
 
         while (matcher.find()) {
-            System.out.println("✅ \"" + matcher.group() + "\" is valid");
+            System.out.println(matcher.group() + "\" is valid");
             validSSN = true;
         }
 
         // Check for invalid format without dashes
         if (!validSSN) {
             if (input.matches(".*\\b\\d{9}\\b.*")) {
-                System.out.println("❌ \"" + input.replaceAll("\\D", "") + "\" is invalid");
+                System.out.println("input.replaceAll("\\D", "") + "\" is invalid");
             } else {
-                System.out.println("❌ No valid SSN found.");
+                System.out.println("No valid SSN found.");
             }
         }
     }

@@ -82,7 +82,7 @@ public class EmployeeManager {
     private static void serializeEmployees(List<Employee> employees) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
             oos.writeObject(employees);
-            System.out.println("\n✅ Employees saved to file: " + FILE_NAME);
+            System.out.println("Employees saved to file: " + FILE_NAME);
         } catch (IOException e) {
             System.err.println("Error saving employees: " + e.getMessage());
         }

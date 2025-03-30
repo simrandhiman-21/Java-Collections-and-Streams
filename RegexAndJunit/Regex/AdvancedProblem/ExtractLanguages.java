@@ -25,9 +25,9 @@ public class ExtractLanguages {
         }
 
         if (!languages.isEmpty()) {
-            System.out.println("✅ Programming Languages Found: " + String.join(", ", languages));
+            System.out.println("Programming Languages Found: " + String.join(", ", languages));
         } else {
-            System.out.println("❌ No programming languages found.");
+            System.out.println("No programming languages found.");
         }
     }
 }

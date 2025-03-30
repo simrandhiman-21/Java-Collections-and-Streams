@@ -13,7 +13,7 @@ class WriterThread extends Thread {
         try {
             String message = "Hello from Writer Thread!";
             pos.write(message.getBytes());
-            System.out.println("✅ Writer: Sent message.");
+            System.out.println("Writer: Sent message.");
             pos.close();
         } catch (IOException e) {
             System.err.println("Writer error: " + e.getMessage());
@@ -36,7 +36,7 @@ class ReaderThread extends Thread {
             int bytesRead = pis.read(buffer);
             
             String message = new String(buffer, 0, bytesRead);
-            System.out.println("✅ Reader: Received message → " + message);
+            System.out.println("Reader: Received message → " + message);
 
             pis.close();
         } catch (IOException e) {
@@ -62,7 +62,7 @@ public class PipedCommunication {
             writer.join();
             reader.join();
 
-            System.out.println("\n✅ Communication between threads completed successfully.");
+            System.out.println("Communication between threads completed successfully.");
 
         } catch (IOException | InterruptedException e) {
             System.err.println("Main error: " + e.getMessage());

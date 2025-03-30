@@ -28,8 +28,8 @@ public class WordFrequencyCounter {
             sortedList.sort((a, b) -> b.getValue().compareTo(a.getValue()));
 
             // Display total words and top 5 frequent words
-            System.out.println("\n✅ Total unique words: " + wordCount.size());
-            System.out.println("\n🔥 Top 5 Most Frequent Words:");
+            System.out.println("Total unique words: " + wordCount.size());
+            System.out.println("Top 5 Most Frequent Words:");
 
             for (int i = 0; i < Math.min(5, sortedList.size()); i++) {
                 Map.Entry<String, Integer> entry = sortedList.get(i);
