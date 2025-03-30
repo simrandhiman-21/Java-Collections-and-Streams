@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/RegexAndJunit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/reflectionandannotations/reflections" vcs="Git" />
   </component>
 </project>
